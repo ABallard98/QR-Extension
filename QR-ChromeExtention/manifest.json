@@ -4,12 +4,7 @@
   "name": "Scannr",
   "description": "This extension will produce a QR code of the current page.",
   "version": "1.0",
-  
-  "content_scripts": [ { 
-	"matches": ["<all_urls>"],
-	"js": ["content.js"]
-  }],
-  
+
   "background":{
 	  "scripts": ["background.js"],
 	  "persistent": true
