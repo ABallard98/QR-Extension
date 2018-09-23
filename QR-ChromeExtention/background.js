@@ -1,4 +1,4 @@
-console.log("Scannr background script running");
+console.log("QR scanner background script running");
 
 /*
 This function will run when the window is fully loaded
@@ -14,7 +14,7 @@ of the extension.g
 function displayURL(){
 	
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-		var currTab = tabs[0];
+		var currTab = tabs[0]; //setting the current tab
 		if (currTab) { 
 			var url = currTab.url;
 							
